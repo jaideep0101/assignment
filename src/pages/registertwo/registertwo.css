@@ -1,0 +1,153 @@
+.container{
+    width: 100%;
+}
+.mainContainer{
+    display: flex;
+    height:100%;
+    width: 100%;
+    
+}
+.registertwo{
+    width: 60%;
+    padding:1rem 3rem;
+    font-family: var(--font-family);
+}
+.register{
+    display: flex;
+    justify-content: space-between;
+}
+.stepback{
+    display: flex;
+    align-items: center;
+    color:var(--color-gray);
+    gap:5px;
+}
+.stepback>span{
+    font-size: 16px;
+    font-size: 600;
+    color:var(--color-gray);
+}
+.stepinfo>h6{
+    font-weight: 500;
+    font-size: 14px;
+    color:var(--color-lgray);
+}
+.stepinfo>p{
+    color:var(--color-gray);
+    font-size: 16px;
+    font-weight: 600;
+}
+.logincontainer{
+    margin: 2rem 6rem;
+}
+.logincontainer>h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.logincontainer>p{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--color-gray);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.input>label{
+    width: 500;
+    font-size: 16px;
+    color:var(--color-gray)
+}
+input{
+    margin-top: 5px;
+    border:1px solid var(--color-gray);
+    border-radius: 6px;
+    padding:15px;
+}
+input::placeholder{
+    color: var(--color-gray);
+}
+input:focus
+{
+    border: 1px solid var(--color-button);
+    outline-offset: 0px;
+    outline: none;
+}
+.checkbox{
+    display: flex;
+    gap:10px;
+}
+.checkbox>span{
+    color:var(--color-lgray);
+}
+.register-btn{
+    border:none;
+    outline:none;
+    width:100%;
+    color:var(--color-white);
+    padding:1rem;
+    border-radius: 6px;
+    background-color:var(--color-button);
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:.5rem;
+}
+.btn-container>p{
+    color:#BABABA;
+    size: 12px;
+}
+.btn-google{
+    display: flex;
+    border:none;
+    outline:none;
+    padding:1rem;
+    border-radius: 6px;
+    background-color:#fff;
+    justify-content: flex-start;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.btn-google>span{
+    margin:0 5.3rem 0 3rem;
+}
+
+@media screen and (max-width:900px) {
+    .registertwo{
+        width: 100%;
+        padding:2rem;
+        margin: 0;
+    }
+    .container{
+        width:100%;
+    }
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        
+    }
+    .logincontainer{
+        margin: 2rem 4rem ;
+    }
+    
+}
+
+
+@media screen and (max-width:600px) {
+.logincontainer{
+    margin: 2rem;
+}
+.registertwo{
+width:100%;
+}
+}

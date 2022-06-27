@@ -1,0 +1,40 @@
+.register-b{
+    margin: 1rem 0;
+    border:none;
+    outline:none;
+    width:100%;
+    color:var(--color-white);
+    padding:1rem;
+    border-radius: 6px;
+    background-color:var(--color-button);
+}
+.logindetails{
+    margin: 2rem 6rem; 
+}
+.logindetails>h1{
+    font-size: 30px;
+    font-weight: 700;  
+}
+.logindetails>p{
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--color-gray);
+}
+.phone{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width:900px){
+.logindetails{
+    margin: 2rem 4rem; 
+}
+}
+
+@media screen and (max-width:600px){
+    .logindetails{
+        margin: 2rem ; 
+    }
+    }

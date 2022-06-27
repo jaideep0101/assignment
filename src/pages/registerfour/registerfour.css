@@ -1,0 +1,31 @@
+.final{
+    margin: 3rem 6rem; 
+}
+.final>h1{
+    font-size: 30px;
+    font-weight: 700;  
+}
+.final>p{
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--color-gray);
+}
+
+.label{
+    margin-top: 10px;
+}
+
+@media screen and (max-width:900px){
+    .final{
+        margin: 2rem 4rem; 
+    }
+    }
+
+    
+@media screen and (max-width:600px){
+    .final{
+        margin: 2rem; 
+    }
+    }

@@ -1,0 +1,73 @@
+.aboutContainer{
+  background: linear-gradient(var(--color-bg),var(--color-bg)), url("../../assets/background.jpg") no-repeat fixed;
+  background-size: cover;
+  background-repeat:cover;
+  background-size: cover;
+  padding:2rem 3rem;
+  width:40%;
+  position: relative;
+}
+.aboutText{
+  margin-top: 2rem;
+
+}
+.aboutText>p{
+  margin: 1rem 0rem;
+  color:var(--color-white);
+  font-weight: 400;
+  line-height: 38px;
+  font-size: 20px;
+  z-index:1;
+}
+.group{
+  margin: 1rem 4rem 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.text{
+  display: flex;
+}
+.text>p{
+  display: inline-block;
+  color:var(--color-white);
+  font-weight: 500;
+}
+.text>span{
+  display: flex;
+  margin-left: 5px;
+  color:#08AD36;
+  align-items: center;
+}
+.vectorone{
+  display: flex;
+  margin-top: 1rem;
+  justify-content: flex-end;
+}
+.vectortwo{
+  position: absolute;
+  left:0px;
+  bottom:0;
+  z-index:0;
+}
+
+@media screen and (max-width:900px) {
+  .aboutContainer{
+      width: 100%;
+      padding:3rem;
+  }
+  .vectorone{
+    margin: 5rem 0;
+  }
+  
+}
+@media screen and (max-width:600px) {
+
+  .vectorone{
+    margin: 4rem 0;
+  }
+  
+
+}
+
+
+

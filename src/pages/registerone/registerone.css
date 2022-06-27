@@ -1,0 +1,131 @@
+.container{
+    width: 100%;
+}
+.mainContainer{
+    display: flex;
+    height:100%;
+    
+}
+.registerone{
+    width: 60%;
+    padding:2rem 3rem 0 6rem;
+    font-family: var(--font-family);
+}
+.signup{
+display: flex;
+justify-content:flex-end;
+}
+.signup>p{
+font-size: 18px;
+font-weight: 400;
+color:var(--color-gray);
+}
+.signup>span{
+    font-size: 18px;
+font-weight: 400;
+ color:var(--color-button);
+}
+.registercontainer{
+margin-top: 4rem;
+width: 65%;
+}
+.registercontainer>h1{
+    color:var(--color-black);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom:10px;
+}
+.registercontainer>p{
+    color: var(--color-gray);
+    line-height: 28px;
+    font-size: 18px;
+
+}
+.btn-navigate{
+    padding:1rem;
+    border-radius: 6px;
+    margin-top: 3rem;
+    background-color:#fff;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.btn-navigate:hover{
+    border:1px solid var(--color-button);
+}
+.btn-main{
+    display: flex;
+    text-align: left;   
+    gap:1rem;
+}
+.btn-maintext{
+    display: flex;
+    flex-direction: column;
+align-items: flex-start;
+}
+.btn-details>.btn-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.btn-maintext{
+    position: relative;
+    justify-content: center;
+  }
+  .btn-maintext>.user {
+    color:var(--color-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+.btn-maintext>h5{
+    font-size: 16px;
+    font: weight 500px;
+    text-align: left;
+}
+.btn-maintext>p{
+    font-size: 14px;
+    font-weight:400;
+    margin-top: 5px;
+    color:var(--color-gray);
+}
+.arrow{
+    display:flex;
+    justify-content: center;
+    color:var(--color-button)
+
+}
+
+
+.btn-maintext>.bag {
+    color:var(--color-button);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+
+@media screen and (max-width:900px) {
+    .registerone{
+        width: 100%;
+        padding:2rem;
+        margin: 0;
+    }
+    .container{
+        width:100%;
+    }
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        
+    }
+    .registercontainer{
+        width:100%;
+
+    }
+    
+}
+
