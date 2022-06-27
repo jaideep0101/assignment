@@ -5,7 +5,7 @@ import {FcGoogle} from "react-icons/fc";
 import About from "../../components/about/About"
 import {MdArrowBackIosNew} from "react-icons/md"
 const RegisterTwo = () => {
-  const [value,setValue] = useState({
+  const [values,setValues] = useState({
     username:"",
     email:"",
     password:"",
@@ -17,7 +17,7 @@ const RegisterTwo = () => {
   }
   const handleChange=(event)=>{
     const {name,value} = event.target;
-  setValue({...value,[name]:value})
+  setValues({...values,[name]:value})
   }
   const handleSubmit=(event)=>{
     event.preventDefault();
@@ -41,27 +41,27 @@ navigate("/pagethree");
         <div className='logincontainer'>
           <h1>Register Individual Account!</h1>
           <p>For the purpose of industry regulation, your details are required.</p>
-      <form autocomplete="off" onSubmit={handleSubmit} className='form'>
+      <form  onSubmit={handleSubmit} className='form'>
       <div className='input'>
       <label>Your fullname*</label>
-        <input autocomplete="off" type="text" required onChange={handleChange} name="username" value={value.username}  placeholder='Enter fullname'/>
+        <input type="text" onChange={handleChange} name="username" value={values.username}  placeholder='Enter fullname' required />
         </div>
         <div className='input'>
         <label>Email address*</label>
-        <input autocomplete="off" type="email" required onChange={handleChange}  name="email" value={value.email} placeholder='Enter email addres'/>
+        <input type="email" required onChange={handleChange}  name="email" value={values.email} placeholder='Enter email addres'/>
         </div>
         <div className='input'>
         <label>Create password*</label>
-        <input autocomplete="off" type="password" required onChange={handleChange} name="password" value={value.password} placeholder='Enter password'/>
+        <input type="password" required onChange={handleChange} name="password" value={values.password} placeholder='Enter password'/>
         </div>
         <div className='checkbox'>
-        <input onChange={handleChange} name="box" required value={value.box}  type="checkbox"/>
+        <input  onChange={handleChange} name="box"  value={values.box}  type="checkbox" required/>
         <span>I agree to terms & conditions</span>
         </div>
         <div className='btn-container'>
-        <button className='register-btn'>Register Account</button>
+        <button type="submit" className='register-btn'>Register Account</button>
        <p>Or</p>
-       <button type='submit' className='btn-google'><span><FcGoogle/></span>Register with Google</button>
+       <button type="submit" className='btn-google'><span><FcGoogle/></span>Register with Google</button>
         </div>
       </form>
         </div>

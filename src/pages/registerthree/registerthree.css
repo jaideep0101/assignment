@@ -11,6 +11,9 @@
 .logindetails{
     margin: 2rem 6rem; 
 }
+.phone{
+    width: 100%;
+}
 .logindetails>h1{
     font-size: 30px;
     font-weight: 700;  

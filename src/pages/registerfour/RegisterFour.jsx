@@ -45,7 +45,7 @@ navigate("/");
       <input type="number" required onChange={handleChange} name="verification" value={value.verification}  placeholder='Enter verification code'/>
         </div>
         <div className='btn-container'>
-        <button className='register-b'>Save & Continue</button>
+        <button type='submit' className='register-b'>Save & Continue</button>
        <p><TbLock/>Your Info is safely secured</p>
         </div>
       </form>

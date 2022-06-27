@@ -1,20 +1,22 @@
 import React,{useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./registerthree.css";
-import PhoneInput from "../../components/phone/phone" 
+import PhoneInput from 'react-phone-number-input'
+import 'react-phone-number-input/style.css'
 import About from "../../components/about/About";
 import {MdArrowBackIosNew} from "react-icons/md";
-import {TbLock} from "react-icons/tb"
+import {TbLock} from "react-icons/tb";
+
 const RegisterThree = () => {
   const navigate = useNavigate();
-  const [value,setValue] = useState({
-    phone:"",
+  const [phone,setPhone] = useState("")
+  const [items,setItems] = useState({
     address:"",
     country:"",
   })
   const handleChange=(event)=>{
     const {name,value} = event.target;
-  setValue({...value,[name]:value})
+  setItems({...items,[name]:value})
   }
   const handleClick=()=>{
     navigate("/pagetwo");
@@ -44,18 +46,24 @@ navigate("/pagefour");
       <form onSubmit={handleSubmit} className='form'>
       <div className='input'>
       <label>Phone number</label>
-    <PhoneInput/>
-        </div>
+    <PhoneInput
+    className='phone'
+    international
+  defaultCountry="IN"
+    placeholder="Enter phone number"
+    value={phone}
+    onChange={setPhone}/>
+    </div>
         <div className='input'>
         <label>Your address</label>
-        <input autocomplete="off" type="text" required onChange={handleChange}  name="email" value={value.address} placeholder='Please enter addres'/>
+        <input autoComplete="off" type="text" required onChange={handleChange}  name="address" value={items.address} placeholder='Please enter addres'/>
         </div>
         <div className='input'>
         <label>Country of residence</label>
-        <input autocomplete="off" type="text" required onChange={handleChange} name="country" value={value.country} placeholder='please select'/>
+        <input autoComplete="off" type="text" required onChange={handleChange} name="country" value={items.country} placeholder='please select'/>
         </div>
         <div className='btn-container'>
-        <button className='register-b'>Save & Continue</button>
+        <button type='submit' className='register-b'>Save & Continue</button>
        <p><TbLock/>Your Info is safely secured</p>
         </div>
       </form>
