@@ -19,7 +19,7 @@ const RegisterFour = () => {
   }
   const handleSubmit=(event)=>{
     event.preventDefault();
-navigate("/welcome");
+navigate("/");
   }
   return (
     <div className='container'>
