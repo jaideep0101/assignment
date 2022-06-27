@@ -1,5 +1,5 @@
 import React from 'react'
-import "./app.css";
+import "./App.css";
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 import { RegisterOne,RegisterTwo,RegisterThree,RegisterFour } from './pages/index';
 const App = () => {
